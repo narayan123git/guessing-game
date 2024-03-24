@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guessing Game</title>
+</head>
+<body style="background-image: url('bgcnr.png'); background-size: cover;">
+    <div class="container">
+        <h1>Guess the Number!</h1>
+        <p id="message">Try to guess the secret number.</p>
+        <input type="number" id="guessInput" placeholder="Enter your guess" class="styled-input">
+        <input type="number" id="rangeInput" placeholder="Enter the maximum range" class="styled-input">
+        <button onclick="checkGuess()" class="styled-button">Submit</button>
+        <p id="attempts">Attempts: 0</p>
+        <p id="feedback"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
